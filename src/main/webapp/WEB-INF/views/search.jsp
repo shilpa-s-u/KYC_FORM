@@ -10,7 +10,10 @@
 <form action="fetch" method="post">
 <table>
 <tr><td><input type="text" name="customer_id" placeholder="Enter the customer_id to fetch"></td></tr>
-
+<tr><td><select name="scheme">
+<option>Select Any scheme</option><option>SB</option><option>MIS</option>
+<option>TD</option><option>SCSS</option><option>RD</option>
+</select></td></tr>
 <tr><td><input type="submit" value="Fetch"></td></tr>
 </table>
 </form>

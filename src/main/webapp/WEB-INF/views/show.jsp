@@ -19,8 +19,8 @@ ${msg }
 <td>${yet.date_of_birth }</td><td>${yet.pan_no }</td><td>${yet.proof_of_identity }</td><td>${yet.proof_of_address }</td>
 <td>${yet.place }</td><td>${yet.signature_of_depositor }</td><td>${yet.signature_of_postmaster }</td>
 <td><ul>
-<li><a href="update?reg=${yet.customer_id }">Update</a></li>
-<li><a href="remove?reg=${yet.customer_id }">Delete</a></li>
+<li><a href="update?id=${yet.customer_id }">Update</a></li>
+<li><a href="remove?id=${yet.customer_id }">Delete</a></li>
 </ul></td>
 </tr>
 </hai:forEach>

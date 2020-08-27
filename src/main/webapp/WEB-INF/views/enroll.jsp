@@ -48,7 +48,7 @@
             <td colspan="4">
               <table class="dob" cellpadding="0" cellspacing="0" border="0" style="display:inline-block; vertical-align: bottom;">
                 <tr class="name-table">
-                  <td><input type="text" name="address" ></td>
+                  <td><input type="text" name="address"  placeholder="Enter the address"></td>
       
                 </tr>
               </table>
@@ -63,7 +63,7 @@
             <td colspan="4">
               <table class="dob" cellpadding="0" cellspacing="0" border="0" style="display:inline-block; vertical-align: bottom;">
                 <tr class="name-table">
-                  <td><input type="date" name="date_of_birth" ></td>
+                  <td><input type="date" name="date_of_birth" placeholder="Enter the yyyy-mm-dd" ></td>
                   
                 </tr>
               </table>
@@ -89,12 +89,12 @@
             <td colspan="4">
               <table class="dob" cellpadding="0" cellspacing="0" border="0" style="vertical-align: bottom; width:100%;">
                 <tr class="name-table">
-                  <td><input type="checkbox" name="proof_of_identity" placeholder="tick applicable">driving license<br>
-        <input type="checkbox" name="proof_of_identity" placeholder="tick applicable">passport<br>
-         <input type="checkbox" name="proof_of_identity" placeholder="tick applicable">voter id<br>
-         <input type="checkbox" name="proof_of_identity" placeholder="tick applicable">government id card<br>
-         <input type="checkbox" name="proof_of_identity" placeholder="tick applicable">ration card<br>
-         <input type="checkbox" name="proof_of_identity" placeholder="tick applicable">any other<br></td>
+                  <td><input type="checkbox" name="proof_of_identity" placeholder="tick applicable">1.driving license<br>
+        <input type="checkbox" name="proof_of_identity" placeholder="tick applicable">2.passport<br>
+         <input type="checkbox" name="proof_of_identity" placeholder="tick applicable">3.voter id<br>
+         <input type="checkbox" name="proof_of_identity" placeholder="tick applicable">4.government id card<br>
+         <input type="checkbox" name="proof_of_identity" placeholder="tick applicable">5.ration card<br>
+         <input type="checkbox" name="proof_of_identity" placeholder="tick applicable">6.any other<br></td>
                   
                 </tr>
               </table>
@@ -110,12 +110,12 @@
             <td colspan="4">
               <table class="dob" cellpadding="0" cellspacing="0" border="0" style="display:inline-block; vertical-align: bottom;">
                 <tr class="name-table">
-                  <td><input type="checkbox" name="proof_of_address" placeholder="tick applicable">driving license<br>
-        <input type="checkbox" name="proof_of_address" placeholder="tick applicable">telephone bill<br>
-         <input type="checkbox" name="proof_of_address" placeholder="tick applicable">electricity bill<br>
-         <input type="checkbox" name="proof_of_address" placeholder="tick applicable">ban account passbook<br>
-         <input type="checkbox" name="proof_of_address" placeholder="tick applicable">ration card<br>
-         <input type="checkbox" name="proof_of_address" placeholder="tick applicable">any other<br>
+                  <td><input type="checkbox" name="proof_of_address" placeholder="tick applicable">1.driving license<br>
+        <input type="checkbox" name="proof_of_address" placeholder="tick applicable">2.telephone bill<br>
+         <input type="checkbox" name="proof_of_address" placeholder="tick applicable">3.electricity bill<br>
+         <input type="checkbox" name="proof_of_address" placeholder="tick applicable">4.bank account passbook<br>
+         <input type="checkbox" name="proof_of_address" placeholder="tick applicable">5.ration card<br>
+         <input type="checkbox" name="proof_of_address" placeholder="tick applicable">6.any other<br>
                   
                 </tr>
               </table>

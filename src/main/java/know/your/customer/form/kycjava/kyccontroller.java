@@ -1,5 +1,6 @@
 package know.your.customer.form.kycjava;
 import java.util.List;
+
 import java.util.Vector;
 import org.springframework.stereotype.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -65,10 +66,29 @@ public class kyccontroller {
 		String got=camp.erase(can);
 		return display().addObject("msg", got+" Deleted Successfully");
 	}
+	
 	@RequestMapping("/find")
 	public ModelAndView search()
 	{
-		return new ModelAndView("search");
+	return new ModelAndView("search");
+		
 	}
-	
+	@RequestMapping(value="/fetch",method=RequestMethod.POST)
+	public ModelAndView reads(@RequestParam("customer_id") String customer_id,@RequestParam("scheme") String scheme)
+	{
+		temp=new Vector<kyc>();
+			if(!customer_id.equals("")&&scheme.equals("Select Any scheme"))
+			{
+				kyc tmp=camp.readOne(Long.parseLong(customer_id));
+				temp.add(tmp);
+			}
+			else if(customer_id.equals("")&&!scheme.equals("Select Any scheme"))
+			{
+				temp=camp.fetchViascheme(scheme);
+				
+			}
+			
+			return new ModelAndView("show").addObject("every", temp);
+		}
+		
 }

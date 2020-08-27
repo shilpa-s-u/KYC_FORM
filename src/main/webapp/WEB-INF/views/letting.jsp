@@ -18,8 +18,8 @@
 <tr><td><input type="text" name="proof_of_identity" value="${fetched.proof_of_identity }"></td></tr>
 <tr><td><input type="text" name="proof_of_address" value="${fetched.proof_of_address }"></td></tr>
 <tr><td><input type="text" name="place" value="${fetched.place }"></td></tr>
-<tr><td><input type="text" name="signatute_of_depositor" value="${fetched.signatute_of_depositor }"></td></tr>
-<tr><td><input type="text" name="signatute_of_postmaster" value="${fetched.signatute_of_postmaster }"></td></tr>
+<tr><td><input type="text" name="signature_of_depositor" value="${fetched.signature_of_depositor }"></td></tr>
+<tr><td><input type="text" name="signature_of_postmaster" value="${fetched.signature_of_postmaster }"></td></tr>
 
 <tr><td><input type="submit" value="Update"></td></tr>
 </table>

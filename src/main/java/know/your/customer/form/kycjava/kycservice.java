@@ -24,12 +24,12 @@ public class kycservice {
 	}
 	public String erase(kyc kyc)
 	{
-		String get=kyc.getPlace();
+		String get=kyc.getName_of_depositor();
 		repo.delete(kyc);
 		return get;
 	}
-	public List<kyc> fetchViacustomer_id(Integer id)
+	public List<kyc> fetchViascheme(String sch)
 	{
-		return repo.getBycustomer_id(id);
+		return repo.getByscheme(sch);
 	}
 }

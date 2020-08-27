@@ -39,7 +39,9 @@ public class kycrest {
 	{
 		return service.erase(kyc);
 	}
-	@GetMapping("/fetch/{constrain}/{data}")// /fetch/department/Computers
+	
+
+	@GetMapping("/fetch/{constrain}/{data}")// /fetch/scheme/SB
 	public List<kyc> find(@PathVariable("constrain") String constrain,@PathVariable("data") String data)
 	{
 		List<kyc> temp=new Vector<kyc>();
@@ -47,7 +49,11 @@ public class kycrest {
 		{
 			temp.add(service.readOne(Long.parseLong(data)));
 		}
-		
+		else if(constrain.equalsIgnoreCase("scheme"))
+		{
+			temp=service.fetchViascheme(data);
+		}
+	
 		return temp;
 	}
 }
