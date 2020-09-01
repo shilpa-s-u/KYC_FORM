@@ -56,4 +56,19 @@ public class kycrest {
 	
 		return temp;
 	}
+	@GetMapping("/fetch/{constrain}/{data}/report/{format}")// /fetch/scheme/SB/report/pdf
+	public String finding(@PathVariable("constrain") String constrain,@PathVariable("data") String data,@PathVariable("format") String format)
+	{
+		List<kyc> temp=new Vector<kyc>();
+		if(constrain.equalsIgnoreCase("customer_id"))
+		{
+			temp.add(service.readOne(Long.parseLong(data)));
+		}
+		else if(constrain.equalsIgnoreCase("scheme"))
+		{
+			temp=service.fetchViascheme(data);
+		}
+		
+		return service.generate(temp, format);
+	}
 }

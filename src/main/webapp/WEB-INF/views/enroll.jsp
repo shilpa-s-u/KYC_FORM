@@ -7,6 +7,10 @@
 <title>enrollment of new customer</title>
 </head>
 <body>
+<%response.setHeader("Cache-Control", "no-cache");
+response.setHeader("Cache-Control", "no-store");
+response.setHeader("Pragma", "no-cache");
+response.setDateHeader("Expires", 0); %>
 <h3 style="color:blue;">${msg }</h3>
 <%@taglib prefix="hai" uri="http://www.springframework.org/tags/form" %>
 <hai:errors path="kyc.*"/>
@@ -167,5 +171,7 @@
 </tr>
 </table>
 </form>
+
+<h2><a href="logout">Logout</a></h2>
 </body>
 </html>

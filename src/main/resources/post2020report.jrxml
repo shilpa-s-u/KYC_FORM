@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.13.0.final using JasperReports Library version 6.13.0-46ada4d1be8f3c5985fd0b6146f3ed44caed6f05  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="post2020report" pageWidth="1900" pageHeight="1000" orientation="Landscape" columnWidth="1860" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7a5c9b49-9dc5-422a-ac69-e92cf61ef530">
+	
+	<field name="customer_id" class="java.lang.Long">
+		
+	</field>
+	<field name="scheme" class="java.lang.String">
+		
+	</field>
+	<field name="name_of_depositor" class="java.lang.String">
+		
+	</field>
+	<field name="address" class="java.lang.String">
+		
+	</field>
+	<field name="date_of_birth" class="java.sql.Date">
+		
+	</field>
+	<field name="pan_no" class="java.lang.Long">
+		
+	</field>
+	<field name="proof_of_identity" class="java.lang.String">
+		
+	</field>
+	<field name="proof_of_address" class="java.lang.String">
+		
+	</field>
+	<field name="place" class="java.lang.String">
+		
+	</field>
+	<field name="signature_of_depositor" class="java.lang.String">
+		
+	</field>
+	<field name="signature_of_postmaster" class="java.lang.String">
+	
+	</field>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{customer_id}]]></groupExpression>
+		<groupHeader>
+			<band height="30">
+				<frame>
+					<reportElement mode="Opaque" x="0" y="3" width="1780" height="24" forecolor="#B89F7D" backcolor="#000000" uuid="f24569ed-2518-465a-a480-0c195aacd180"/>
+					<staticText>
+						<reportElement x="0" y="0" width="100" height="21" forecolor="#FCFAFA" uuid="acf8f668-9d08-4494-8168-6d7e3e401b07"/>
+						<textElement>
+							<font isBold="true"/>
+						</textElement>
+						<text><![CDATA[customer_id]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="140" y="0" width="100" height="24" forecolor="#F5EEED" uuid="13386d08-25f8-4f90-8270-acf8a826c51a"/>
+						<textElement>
+							<font isBold="true"/>
+						</textElement>
+						<text><![CDATA[scheme]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="300" y="0" width="100" height="20" forecolor="#FAFAFA" uuid="20dc4374-ab42-4fbc-af5b-5ebc8c35b11d"/>
+						<textElement>
+							<font isBold="true"/>
+						</textElement>
+						<text><![CDATA[name_of_depositor]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="430" y="-3" width="100" height="23" forecolor="#FCF5F5" uuid="7c9fc185-9356-4908-a16b-d5d0297cf1b7"/>
+						<textElement>
+							<font isBold="true"/>
+						</textElement>
+						<text><![CDATA[address]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="570" y="-1" width="100" height="20" forecolor="#FCFAFA" uuid="3770436b-1bf7-4607-ad5c-59f7a3a19050"/>
+						<textElement>
+							<font isBold="true"/>
+						</textElement>
+						<text><![CDATA[date_of_birth]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="720" y="0" width="100" height="23" forecolor="#FAF5F5" uuid="035bc46d-d896-454e-8c89-429a9168ac0d"/>
+						<textElement>
+							<font isBold="true"/>
+						</textElement>
+						<text><![CDATA[pan_no]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="890" y="0" width="100" height="19" forecolor="#FAEBEB" uuid="e28e6b02-eb1b-4d09-bf2d-f9d64e436f2c"/>
+						<textElement>
+							<font isBold="true"/>
+						</textElement>
+						<text><![CDATA[proof_of_identity]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="1060" y="0" width="100" height="23" forecolor="#FAF7F7" uuid="c5dc943d-0151-4c34-8c6c-38161a3d468d"/>
+						<textElement>
+							<font isBold="true"/>
+						</textElement>
+						<text><![CDATA[proof_of_address]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="1230" y="0" width="100" height="20" forecolor="#F5E6E6" uuid="140e9f66-df2e-4866-b2bf-a830ad271fac"/>
+						<textElement>
+							<font isBold="true"/>
+						</textElement>
+						<text><![CDATA[place]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="1420" y="0" width="130" height="23" forecolor="#FFF5F5" uuid="c5911db4-f1d6-47f6-9df6-6129cd45bf5d"/>
+						<textElement>
+							<font isBold="true"/>
+						</textElement>
+						<text><![CDATA[signature_of_depositor]]></text>
+					</staticText>
+					<staticText>
+						<reportElement x="1639" y="0" width="121" height="23" forecolor="#F7EEED" uuid="0de9b504-40f3-441a-9c82-f92aad996724"/>
+						<textElement>
+							<font isBold="true"/>
+						</textElement>
+						<text><![CDATA[signature_of_postmaster]]></text>
+					</staticText>
+				</frame>
+				<rectangle>
+					<reportElement x="1780" y="0" width="77" height="24" backcolor="#666666" uuid="70e1e931-2edd-4f3d-b09b-b9da04709f25"/>
+					<graphicElement>
+						<pen lineWidth="0.0"/>
+					</graphicElement>
+				</rectangle>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="6"/>
+		</groupFooter>
+	</group>
+	<group name="Group2">
+		<groupExpression><![CDATA[$F{scheme}]]></groupExpression>
+		<groupHeader>
+			<band height="45">
+				<textField>
+					<reportElement x="2" y="0" width="100" height="30" uuid="622bd6db-6ea9-402d-b33f-e300e3ac3005"/>
+					<textFieldExpression><![CDATA[
+$F{customer_id}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="310" y="-2" width="100" height="30" uuid="c2baef60-0b0e-44f4-ab54-dc682e63944e"/>
+					<textFieldExpression><![CDATA[$F{name_of_depositor}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="430" y="0" width="100" height="30" uuid="5806ab31-19c7-42be-8fc4-ddd71ac7805d"/>
+					<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="577" y="0" width="100" height="30" uuid="e5462344-95c9-4674-85c5-fcb9c770f894"/>
+					<textFieldExpression><![CDATA[$F{date_of_birth}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="730" y="0" width="100" height="30" uuid="cb5cd86b-b98d-4d6c-bb99-4905a9b42704"/>
+					<textFieldExpression><![CDATA[$F{pan_no}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="890" y="0" width="100" height="30" uuid="dfe96b59-60e1-4047-8cf5-61c70bff1df2"/>
+					<textFieldExpression><![CDATA[$F{proof_of_identity}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="1060" y="0" width="100" height="30" uuid="6f7714ba-8869-4453-afd6-e6b4d281d1e0"/>
+					<textFieldExpression><![CDATA[$F{proof_of_address}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="1240" y="0" width="100" height="30" uuid="255edb47-c534-4b7e-a1bd-6a6602f50efb"/>
+					<textFieldExpression><![CDATA[$F{place}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="1640" y="0" width="120" height="30" uuid="00c3fabe-9fa1-492f-8b55-db8a76c8efcb"/>
+					<textFieldExpression><![CDATA[$F{signature_of_postmaster}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="1420" y="-2" width="120" height="30" uuid="47db3b12-175c-4ca9-95f0-d2429c178948"/>
+					<textFieldExpression><![CDATA[$F{signature_of_depositor}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="150" y="0" width="100" height="30" uuid="c9f8b096-4632-41a1-a3de-5626b8ba82e2"/>
+					<textFieldExpression><![CDATA[$F{scheme}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="name_of_depositor">
+		<groupExpression><![CDATA[$F{name_of_depositor}]]></groupExpression>
+	</group>
+	<group name="address">
+		<groupExpression><![CDATA[$F{address}]]></groupExpression>
+	</group>
+	<group name="date_of_birth">
+		<groupExpression><![CDATA[$F{date_of_birth}]]></groupExpression>
+	</group>
+	<group name="pan_no">
+		<groupExpression><![CDATA[$F{pan_no}]]></groupExpression>
+	</group>
+	<group name="proof_of_identity">
+		<groupExpression><![CDATA[$F{proof_of_identity}]]></groupExpression>
+	</group>
+	<group name="proof_of_address">
+		<groupExpression><![CDATA[$F{proof_of_address}]]></groupExpression>
+	</group>
+	<group name="place">
+		<groupExpression><![CDATA[$F{place}]]></groupExpression>
+	</group>
+	<group name="signature_of_depositor">
+		<groupExpression><![CDATA[$F{signature_of_depositor}]]></groupExpression>
+	</group>
+	<group name="signature_of_postmaster">
+		<groupExpression><![CDATA[$F{signature_of_postmaster}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="102" splitType="Stretch">
+			<image>
+				<reportElement x="1780" y="0" width="77" height="102" uuid="651ccc4b-e999-40fe-bcbf-1f25bcfc98af"/>
+				<imageExpression><![CDATA["cherry.jpg"]]></imageExpression>
+			</image>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="1780" height="66" backcolor="#000000" uuid="d8d9e644-3a32-491d-97cb-a277aff17133"/>
+				<staticText>
+					<reportElement x="0" y="0" width="370" height="66" uuid="27d8f6ee-f0a9-44f6-a160-1763c3b00f30"/>
+					<box topPadding="4" leftPadding="4" bottomPadding="4" rightPadding="4"/>
+					<textElement verticalAlignment="Bottom">
+						<font isBold="false"/>
+					</textElement>
+					<text><![CDATA[KYC FORM]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1460" y="30" width="316" height="29" uuid="cfa21334-0634-4605-9ea7-aca4981f67e4"/>
+					<textElement textAlignment="Right">
+						<font size="22" isBold="false"/>
+					</textElement>
+					<text><![CDATA[CUSTOMER DETAILS]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="70" width="1780" height="32" forecolor="#000000" backcolor="#CC0000" uuid="b0c895f6-6dbd-477d-9858-9ad66af087e1"/>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement x="1630" y="10" width="144" height="20" forecolor="#FFFFFF" uuid="a33fce3b-20c1-4696-873a-fe134d1e7d88"/>
+					<textElement textAlignment="Right">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="18" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="18" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="1857" height="18" uuid="34a2ae4b-4055-476b-8676-d499f6af510b"/>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="7" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="501ac6c4-e9d4-43cb-ba6b-7f2f44394cf3"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="1857" height="25" forecolor="#D0B48E" backcolor="#000000" uuid="ffb10ec8-0371-4545-8eaa-96d62ad3cec0"/>
+				<textField evaluationTime="Report">
+					<reportElement  x="757" y="3" width="40" height="20" forecolor="#FFFFFF" uuid="b5521ea6-5f36-4864-856f-58d0bcd011f2"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="677" y="3" width="80" height="20" forecolor="#FFFFFF" uuid="e625ea3c-1741-4cfe-81cf-fbbdd00162c8"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement  x="2" y="3" width="197" height="20" forecolor="#FFFFFF" uuid="0c9f7e91-d3f5-47f9-82b7-0b2b3a43a5d6"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
